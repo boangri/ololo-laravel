@@ -8,9 +8,9 @@
 <tr><td>Год</td><td>Проект</td><td>Описание</td></tr>
 @foreach($data as $row)
 	<tr>
-		<td>{{$row['Year']}}</td>
-		<td>{{$row['Site']}}</td>
-		<td>{{$row['Description']}}</td>
+		<td>{{$row->Year}}</td>
+		<td>{{$row->Site}}</td>
+		<td>{{$row->Description}}</td>
 	</tr>
 @endforeach
 </table>
