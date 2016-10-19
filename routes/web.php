@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
+});
+
+Route::get('/services', function () {
+    return view('services');
+});
+
+//Route::get('/portfolio', function () {
+//    return view('portfolio');
+//});
+
+Route::get('/portfolio', 'IndexController@portfolio');
+
+Route::get('/contacts', function () {
+    return view('contacts');
 });
